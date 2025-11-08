@@ -178,3 +178,29 @@ p{margin:.5em 0 1em}
   .nav ul{gap:12px}
   .btn{width:100%}
 }
+/* ==== モバイルのナビゲーション修正（480px以下） ==== */
+@media (max-width: 480px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  .nav-button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
