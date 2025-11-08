@@ -204,3 +204,21 @@ p{margin:.5em 0 1em}
     font-size: 14px;
     padding: 8px 12px;
   }
+/* ==== ナビの横並び強制（モバイル最優先） ==== */
+.nav {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+
+.nav li,
+.nav a {
+  white-space: nowrap;
+}
